@@ -27,6 +27,19 @@
                 <div class="col-md-6">
                   <a routerLink="/forgot-password" class="text-dark" style="text-decoration: none;">Forgot Password?</a>
                 </div>
+
+                <div class="row mt-2">
+                  <a (click)="signInWithGoogle()" style='text-decoration: none; cursor: pointer;'>
+                    <div class="card shadow text-center">
+                      <div class="card-body">
+                        <img src="../../../assets/icons8-google-48.png" height="24px" width="24px" alt=''/> Sign In with Google
+                      </div>
+                    </div>
+                  </a>
+
+                </div>
+
+
               </div>
             </form>
           </div>
