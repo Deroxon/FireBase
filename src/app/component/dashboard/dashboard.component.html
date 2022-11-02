@@ -6,9 +6,49 @@
         <div class="card-body">
 
 
-            <div class="mb-3">
-              <h4 class="text-dark text-muted"> Welcome to the dashboard</h4>
-            </div>
+           <form>
+              <input type="text" name="title" placeholder="title" [(ngModel)] =title />
+              <label for="title"></label>
+
+              <input type="datetime-local" name="date" placeholder="date" [(ngModel)] =date />
+              <label for="date"></label>
+
+              <input type="text" name="shortDescription" placeholder="shortDescription" [(ngModel)] =shortDescription />
+              <label for="shortDescription"></label>
+
+              <input type="text" name="Description" placeholder="Description" [(ngModel)] =Description />
+              <label for="Description"></label>
+
+              <input type="text" name="mainImageURL" placeholder="Url" [(ngModel)] =mainImage.url />
+              <label for="mainImageURL"></label>
+
+              <input type="text" name="mainImageAlt" placeholder="mainImageAlt" [(ngModel)] =mainImage.alt />
+              <label for="mainImageAlt"></label>
+
+              <input type="text" name="mainImagetitle" placeholder="mainImagetitle" [(ngModel)] =mainImage.title />
+              <label for="mainImagetitle"></label>
+
+
+              <input type="text" name="tags" placeholder="please enter tags after ," [(ngModel)] =tags />
+              <label for="tags"></label>
+
+              <input type="text" name="IUrl" placeholder="Image URL" [(ngModel)] =imagesUrl />
+              <label for="IUrl"></label>
+
+              <input type="text" name="ITitle" placeholder="Image Title" [(ngModel)] =imagesTitle />
+              <label for="ITitle"></label>
+
+              <input type="text" name="Alt" placeholder="Image Alt" [(ngModel)] =imagesAlt />
+              <label for="Alt"></label>
+              
+
+
+              <button type="submit" class="btn btn-info" (click)="createUpdate()" >Create Update</button>
+
+
+              <button type="submit" class="btn btn-info" (click)=" getAllUpdates()" >Get all Updates</button>
+              
+           </form>
 
 
             <button type="button" class="btn btn-info" (click)="logout()">Logout</button>
